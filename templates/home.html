@@ -1,0 +1,21 @@
+<h1>Welcome to Pattara GPM predictions</h1>
+<h2>Please enter your GPM measurements below:</h2>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.Cylinders_s.label }} {{form.Cylinders_s}}
+    <br>
+    {{ form.Displacement_s.label}} {{form.Displacement_s}}
+    <br>
+    {{ form.Horsepower_s.label}} {{form.Horsepower_s}}
+    <br>
+    {{ form.Weight_s.label}} {{form.Weight_s}}
+    <br>
+    {{ form.Acceleration_s.label}} {{form.Acceleration_s}}
+    <br>
+    {{form.Year_s.label}}{{form.Year_s}}
+    <br>
+    {{form.Origin_s.label}}{{form.Origin_s}}
+    <br>
+    {{ form.submit() }}
+</form>
